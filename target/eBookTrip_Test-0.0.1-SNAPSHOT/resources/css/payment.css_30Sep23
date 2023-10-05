@@ -1,0 +1,1232 @@
+[genuitec-file-id="wc1-58"],[genuitec-lp-path="/eBookTrip_Test/src/main/webapp/resources/css/payment.css"],[genuitec-lp-enabled=false]{
+  /* for codelive */
+}
+
+body
+{
+    background-color:#f0f0f0;
+}
+.mycontainer
+{
+    max-width:1366px;
+    margin:auto;
+}
+.header-container
+{
+    width:100%;
+    background-color:#ffffff;
+    position:fixed;
+    border-bottom:1px solid #ddd;
+    top:0;
+    z-index:5;
+}
+.header
+{
+    max-width:1366px;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+    height:60px;
+    align-items:center;
+}
+.logo-fh img
+{
+    height:60px;
+}
+.logo-fh
+{
+    margin:auto 3%;
+}
+.navbar-main
+{
+    display:flex;
+    margin:0 3%;
+    height:60px;
+    align-items:center;
+}
+.navbar-main li
+{
+    display:inline;
+}
+.navbar-main li a
+{
+    text-decoration:none;
+    color:#101010;
+    font-family: 'Lato', sans-serif;
+    padding:19px 10px;
+}
+.navbar-main li a:hover
+{
+    color:#db2405;
+}
+
+.expert-talk img {width: 40px; height: auto;}
+.expert-talk{position: relative;}
+.expert-talk span.call-icon {position: absolute; left: -44px; vertical-align: middle; top: 18px;}
+.expert-talk span.topcall-text-sec {margin-top: -24px; position: relative; top: -14px;}
+.expert-talk span.topcall-text {display: block; text-align: center; letter-spacing: .5px;}
+
+
+.expert-talk a{padding:20px 10px; text-decoration:none; font-family:-apple-system,BlinkMacSystemFont,Arial,Helvetica Neue,Segoe UI,Roboto,sans-serif;}
+.expert-talk a span{color:#008a04; font-size:20px; font-weight:bold;}
+
+.expert-talk a span:nth-child(1)
+{
+    font-size:11px;
+    color:#303030;
+    font-weight:normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.side-navbar-button
+{
+    display:none;
+    margin:auto 3%;
+}
+.side-navbar-button button
+{
+    border:0;
+    color:#063d99;
+    outline:0;
+    background-color:#ffffff;
+    cursor: pointer;
+    font-size:22px;
+}
+.side-navbar-button button:hover
+{
+    color:#db2405;
+}
+.side-navbar
+{
+    position:fixed;
+    background-color:#ffffff;
+    display:flex;
+    flex-direction:column;
+    top:0;
+    right:0;
+    z-index:999;
+    height:100%;
+    font-family:-apple-system,BlinkMacSystemFont,Arial,Helvetica Neue,Segoe UI,Roboto,sans-serif;
+    overflow-y:scroll;
+    width:0;
+    transition:width 0.2s;
+}
+.side-navbar::-webkit-scrollbar
+{
+    display:none;
+}
+.side-navbar li
+{
+    display:inline;
+    margin:10px 0;
+}
+.side-navbar li:nth-child(1)
+{
+    background-color:#063d99;
+    height:25px;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin:0;
+}
+/*
+.side-navbar li:nth-child(2)
+{
+    background-color:#063d99;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+}
+.side-navbar li:nth-child(3)
+{
+    background-color:#063d99;
+    height:25px;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin:0;
+}*/
+.side-navbar li a
+{
+    color:#101010;
+    text-decoration:none;
+    display:flex;
+    padding-left:7%;
+}
+.side-navbar li:nth-child(1) button
+{
+    background-color:#063d99;
+    border:0;
+    outline:0;
+    color:#ffffff;
+    margin-right:5px;
+    font-size:20px;
+    cursor: pointer;
+}
+.side-navbar li:nth-child(2) a
+{
+    padding:10px 40%;
+    color:#ffffff;
+    background-color:#db2405;
+    text-decoration:none;
+    border-radius:3px;
+}
+.side-navbar li:nth-child(3) a
+{
+    color:#ffffff;
+    margin-right:7%;
+    text-decoration:underline;
+    padding:0;
+}
+.side-navbar p
+{
+    margin:0 auto;
+    margin-top:20px;
+    font-size:14px;
+    color:#333333;
+}
+.screen-overlay
+{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.8);
+    z-index:998;
+    top:0;
+    display:none;
+}
+#screenoverlay2
+{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.8);
+    z-index:997;
+    top:0;
+    display:none;
+}
+@media only screen and (max-width:1025px)
+{
+    .navbar-main{display:none;}
+    .side-navbar-button{display:block;}
+}
+@media only screen and (min-width:1025px)
+{
+    .side-navbar{visibility:hidden;}
+    .screen-overlay{visibility:hidden;}
+}
+@media only screen and (max-width:768px)
+{
+    .header-container{position: static;}
+}
+.backbtnrow
+{
+    width:100%;
+    padding:0 2.5%;
+    margin-top:60px;
+}
+.backbtnrow button
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fff;
+    background-color:#da2000;
+    border:0;
+    outline:0;
+    height:40px;
+    padding:0 15px;
+    font-size:17px;
+    margin:10px 0 10px 10px;
+}
+.backbtnrow button:hover
+{
+    background-color:red;
+}
+.ftpdetails
+{
+    width:100%;
+    padding:0 2.5%;
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+}
+.ft-block
+{
+    width:75%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.flight-details
+{
+    width:98%;
+    margin:0 1%;
+    background-color:#ffffff;
+    border-radius:5px;
+    overflow:hidden;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow:1px 1px 3px #dddddd,-1px -1px 3px #dddddd,1px -1px 3px #dddddd,-1px 1px 3px #dddddd;
+}
+.fdhead
+{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:19px;
+    padding:10px 0 0 20px;
+    font-weight:600;
+    color:#063d99;
+}
+.departure,.return
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:98%;
+}
+.deprow,.retrow
+{
+    display:flex;
+    justify-content:space-between;
+    margin:10px;
+}
+.deprow span,.retrow span
+{
+    font-size:16px;
+    color:#424242;
+    font-family:'raleway';
+    font-weight:600; letter-spacing:1px;
+}
+.deprow a
+{
+    font-size:13px;
+    color:#17252A;
+}
+.flirow
+{
+    display:flex;
+    justify-content:space-between;
+    margin:10px;
+    font-size:13px;
+    color:#777;
+}
+.fdetails1
+{
+    display:flex;
+    justify-content:space-between;
+}
+.fdetails1 img
+{
+    width:36px;
+    height:36px;
+}
+.fdetails1 div
+{
+    display:flex;
+    flex-direction:column;
+}
+.fdetails2
+{
+    display:none;
+}
+.tadetails
+{
+    width:50%;
+    display:flex;
+    justify-content:space-between; align-items:center;
+}
+.tadetails > .a1d, .tadetails > .a2d { width:50%; }
+.cwdetails
+{
+    display:flex;
+    flex-direction:column;
+}
+.fliname
+{
+    font-size:15px;
+    color:#17252A;
+    font-weight:550;
+}
+.a1d div,.a2d div
+{
+    text-align:center;
+}
+.time,.date
+{
+    color:#17252A;
+    font-weight:550;
+}
+.sname
+{
+    color:#17252A;
+    font-weight:550;
+    font-size:15px;
+}
+.wayd
+{
+    font-weight:550;
+}
+.durarow
+{
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    padding:5px 10px;
+    background-color:#063d99;
+    color:#ffffff;
+}
+.stop-divider
+{
+    width:102%;
+    text-align:center;
+    font-size:13px;
+    color:#777;
+    border-bottom:1px dashed #777;
+    margin:10px 0 20px;
+}
+.stop-divider span
+{
+    background:#fff;
+    padding:0 10px;
+    position:relative;
+    top:7px;
+}
+.price-block
+{
+    width:75%;
+}
+.price-details
+{
+    width:98%;
+    margin:0 1%;
+    background-color:#ffffff;
+    border-radius:5px;
+    box-shadow:1px 1px 3px #dddddd,-1px -1px 3px #dddddd,1px -1px 3px #dddddd,-1px 1px 3px #dddddd;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+.pdhead
+{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:19px;
+    padding:10px 0 0 10px;
+    font-weight:600;
+    color:#063D99;
+}
+.person-price
+{
+    width:100%;   
+}
+.tpp
+{
+    width:96%;
+    margin:5px 2%;
+    font-weight:550;
+    display:flex;
+    justify-content:space-between;
+    font-size:15px;
+}
+.fcp,.tfp
+{
+    width:96%;
+    margin:5px 2%;
+    font-size:13px;
+    display:flex;
+    justify-content:space-between;
+}
+.total-price
+{
+    width:100%;
+    padding:5px 2%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display:flex;
+    justify-content:space-between;
+    background-color:#063d99;
+    color:#fff;
+    font-size:19px;
+    font-weight:520;
+}
+.price-details p
+{
+    width:100%;
+    padding:5px 2%;
+    margin:0;
+    font-size:11px;
+    color:#333;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    background-color:#ffffff;
+}
+.traveler-details
+{
+    width:98%;
+    margin:15px 1%;
+    background-color:#ffffff;
+    border-radius:5px;
+    box-shadow:1px 1px 3px #dddddd,-1px -1px 3px #dddddd,1px -1px 3px #dddddd,-1px 1px 3px #dddddd;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.traveler-details .tdblock > div:first-child > span { font-size:14px; }
+.tdhead
+{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:19px;
+    padding:10px 0 0 20px;
+    font-weight:600;
+    color:#063D99;
+}
+.tdblock
+{
+    width:96%;
+    margin:20px 2%;
+    font-weight:550;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.tdform
+{
+    display:flex; flex-wrap:wrap; /*justify-content:space-between;*/
+    /*flex-direction:column;*/
+    width:100%;
+}
+.tname
+{
+    display:flex;
+    justify-content:space-between;
+}
+.tname input, .lableUpOnFocus input
+{   width:100%;outline:0; border-radius:5px; border:1px solid #ccc; padding-left:10px; height:45px; padding-top:20px; 
+    font-weight:600; font-size:13px; color:#1f1f1f;
+    /*width:32%;
+    height:40px;
+    margin:5px 0;
+    outline:0;
+    border-radius:3px;
+    border:1px solid #ccc;
+    padding-left:10px;*/
+}
+.tgdob
+{
+    display:flex;
+    justify-content:space-between;
+}
+.gender
+{
+    width:100%;
+    height:45px;
+    margin:18px 0 0;
+    outline:0;
+    border-radius:5px;
+    border:1px solid #ccc;
+    padding-left:5px; font-size:14px
+}
+.dobform
+{
+    width:calc(83.6% - 10px);
+    display:flex;
+    flex-direction:column;
+    margin:15px 0 0; margin-left:13.33px;
+}
+.dobform div:nth-child(1)
+{
+    font-size:12px;
+    color:#222;
+    font-weight:500;
+    /*margin-left:3px;*/ letter-spacing:0.5px;
+}
+.dob
+{
+    display:flex;
+    justify-content:space-between;    border-radius: 5px; border: 1px solid #ccc; position:relative;
+}
+.dob > div { width:32%; position:relative; }
+.dob:before, .dob:after { content:''; position:absolute; width:1px; height:30px; top:8px; left:33%; background:#ccc; z-index:1; }
+.dob:after { left:unset; right:33%; }
+.astrick { color:red; }
+.dob select
+{
+    width:100%;
+    height:43px;
+    outline:0;
+    border-radius:5px;
+    border:1px solid #ccc;
+    padding-left:5px; font-size:14px; border:0;
+}
+.ad-block
+{
+    width:25%;
+    margin-top:-10px;
+    align-self: flex-start;
+    position:sticky;
+    top:70px;
+}
+.sa-item
+{
+    width:98%;
+    margin:10px 1%;
+    background-color:#ffffff;
+    border-radius:5px;
+    box-shadow:1px 1px 3px #dddddd,-1px -1px 3px #dddddd,1px -1px 3px #dddddd,-1px 1px 3px #dddddd;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:15px;
+    font-size:15px;
+    color:#303030;
+}
+
+.sa-item .trustpilot-widget iframe {margin: 0 auto;}
+
+.sa-head
+{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:17px;
+    font-weight:600;
+    color:#303030;
+    display:flex;
+    align-items:center;
+}
+.sa-row
+{
+    display:flex;
+    align-items:center;
+    margin:5px 0;
+}
+.sa-row img
+{
+    margin-right:5px;
+    width:60px;
+    border-radius:5px;
+}
+.sa-row i
+{
+    color:#008000;
+    font-size:20px;
+    margin-right:8px;
+}
+.sa-head img
+{
+    width:80px;
+}
+.payment-details
+{
+    width:98%;
+    margin:10px 1%;
+    background-color:#ffffff;
+    border-radius:5px;
+    box-shadow:1px 1px 3px #dddddd,-1px -1px 3px #dddddd,1px -1px 3px #dddddd,-1px 1px 3px #dddddd;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.paydhead
+{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:19px;
+    padding:10px 0 0 20px;
+    font-weight:600;
+    color:#063D99;
+    display:flex;
+    align-items:center;
+}
+.secure-ssl
+{
+    font-size:14px;
+    color:#008000;
+    margin:0 30px;
+    padding:4px 10px;
+    border:1px solid #008000;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    font-weight:400;
+}
+.secure-ssl i
+{
+    font-size:18px;
+}
+.paydform
+{
+    display:flex;
+    flex-direction:column;
+    width:96%;
+    margin:10px 2%;
+    padding:5px 0 15px 0;
+}
+.card-varients
+{
+    display:flex;
+    align-items:center;
+    /*margin-bottom:10px;*/ justify-content:flex-start; padding-right:12px;
+}
+.card-images
+{
+    display:flex;
+    /*margin-left:30px;*/
+    align-items:center;
+}
+.card-images img
+{
+    width:50px;
+    height: auto;
+    margin:0 8px 0 0;
+}
+.paydform label
+{
+    position: relative;
+    padding-left:23px;
+    cursor: pointer;
+    color:#101010;
+    font-family:-apple-system,BlinkMacSystemFont,Arial,Helvetica Neue,Segoe UI,Roboto,sans-serif;
+    font-size:18px;
+    font-weight:550;
+    margin-right:10px;
+    user-select: none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.paydform label input
+{
+    position: absolute;
+    width:0;
+    height:0;
+}
+.paydform label .custom-radio
+{
+    width:16px;
+    height:16px;
+    border:2px solid #303030;
+    border-radius:50%;
+    position: absolute;
+    top:4px;
+    left:0;
+}
+.paydform label .custom-radio::after
+{
+    content:'';
+    position:absolute;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background-color:royalblue;
+    top:2px;
+    left:2px;
+    display:none;
+}
+.paydform label input:checked ~ .custom-radio::after
+{
+    display:block;
+}
+.card-type
+{
+    background-repeat:no-repeat;
+    background-size:30px auto;
+    background-position:98% 50%;
+}
+.paydform input
+{
+    width:70%;
+    height:40px;
+    margin:5px 0;
+    outline:0;
+    border-radius:3px;
+    border:1px solid #ccc;
+    padding-left:10px;
+}
+.paydform div:nth-child(4)
+{
+    font-size:15px;
+    color:#222;
+    font-weight:500;
+    margin-left:3px;
+}
+.expirydate
+{
+    /* display:flex; */
+    justify-content:space-between;
+    width:70%!important;
+}
+
+
+.expirydate select
+{
+    width:49%;
+    height:40px;
+    margin:5px 0;
+    outline:0;
+    border-radius:3px;
+    border:1px solid #ccc;
+    padding-left:10px;
+}
+.payViaDebCreSec { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.payViaDebCreSec > div:first-child { display:inline-flex; align-items:center; }
+.payViaDebCreSec > div input { height:20px; width:20px; margin-right:12px; }
+.payViaDebCreSec > div span { font-weight:500; font-size:14px; letter-spacing:0.5px; }
+.pbdetails1
+{
+    padding:0 2.5%;
+}
+.pbdetails
+{
+    width:75%;
+}
+.billing-details
+{
+    width:98%;
+    margin:10px 1%;
+    background-color:#ffffff;
+    border-radius:5px;
+    box-shadow:1px 1px 3px #dddddd,-1px -1px 3px #dddddd,1px -1px 3px #dddddd,-1px 1px 3px #dddddd;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bdhead
+{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:19px;
+    padding:10px 0 0 20px;
+    font-weight:600;
+    color:#063D99;
+}
+.bdform
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:98%;
+    margin:10px 2% 10px 1%;
+    padding:5px 0 10px 0;
+}
+.bdform input,.bdform select
+{
+    width:32%;
+    height:45px;
+    /*margin:5px 3px;*/
+    outline:0;
+    border-radius:5px;
+    border:1px solid #ccc; font-weight: 600;
+    padding-left:10px; font-size:13px; font-family: Arial, Helvetica, sans-serif;color:#1f1f1f
+}
+.bdform input { padding-top: 20px; font-weight: 600; font-size: 13px; margin-left:0;    font-family: Arial, Helvetica, sans-serif;color:#1f1f1f }
+.bdform div
+{
+  /*width:32%;*/
+}
+.bdform div input,.bdform div select
+{
+  width:100%;
+}
+.headsubinfo
+{
+    font-size:12px;
+    color:#aaa;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:500;
+}
+.ccc-details
+{
+    width:98%;
+    margin:10px 1%;
+    background-color:#ffffff;
+    border-radius:5px;
+    box-shadow:1px 1px 3px #dddddd,-1px -1px 3px #dddddd,1px -1px 3px #dddddd,-1px 1px 3px #dddddd;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cccdhead
+{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:19px;
+    padding:10px 0 0 20px;
+    font-weight:600;
+    color:#063D99;
+}
+
+
+.bgblue .cccdhead, .bgblue .paydhead, .bgblue .prdhead, .bgblue .fdhead, .bgblue .tdhead, .bgblue .bdhead{
+    background: #063d99;
+    color: #fff;
+    border-radius: 5px 5px 0px 0;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+.cccdform
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:96%;
+    margin:10px 2%;
+    padding:5px 0 10px 0;
+    gap: 14%;
+}
+.cccdform input
+{
+    width:100%;
+    height:47px;
+    margin:5px 0px;
+    outline:0;
+    border-radius:5px;
+    border:1px solid #ccc;
+    padding-left:10px;
+}
+.pr-details
+{
+    width:98%;
+    margin:10px 1%;
+    background-color:#ffffff;
+    border-radius:5px;
+    box-shadow:1px 1px 3px #dddddd,-1px -1px 3px #dddddd,1px -1px 3px #dddddd,-1px 1px 3px #dddddd;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.prdhead
+{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:19px;
+    padding:10px 0 0 20px;
+    font-weight:600;
+    color:#063D99;
+}
+.prdcontent
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:96%;
+    margin:10px 2%;
+    padding:5px 0 10px 0;
+}
+.i-button
+{
+    font-size:14px;
+    color:#002162;
+    padding:10px;
+    border:1px solid #002162;
+    border-radius:5px;
+}
+.traveler-name
+{
+    width:100%;
+    font-size:15px;
+    padding:15px 5px;
+    color:#505050;
+    border-bottom:1px dashed #cccccc;
+}
+.terms-policies
+{
+    width:100%;
+    font-size:14px;
+    padding:15px 5px;
+    color:#707070;
+    border-bottom:1px dashed #cccccc;
+}
+.terms-policies a
+{
+    text-decoration:underline; color: #063d99;
+}
+.submit-details
+{
+    width:100%;
+    padding:10px 2%;
+    display:flex;
+    flex-direction:column;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:16px;
+    text-align:center;
+    color:#303030;
+}
+.confirm-btn-text {display: block; font-size: 13px; font-weight: 400; text-transform: uppercase;}
+
+.submit-details button
+{
+    color:#fff;
+    background-color:#db2405!important;
+    height:60px;
+    width: 230px;
+    margin: 0 auto !important;
+    /* margin:0%!important;
+    width:100%!important;
+     margin:15px 30%; */
+    border:0;
+    outline:0;
+    font-size:18px;
+    font-weight:600;
+    border-radius:8px;
+}
+.submit-details button:hover
+{
+background-color:red;
+}
+.submit-details button:disabled
+{
+background-color:#9e9e9e;
+cursor:not-allowed;
+}
+.submit-details label
+{
+    width:96%;
+    cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+    user-select:none;
+}
+.submit-details label input
+{
+    position:absolute;
+    opacity:0;
+    height:0;
+    width:0;
+}
+.cb
+{
+    display:flex;
+    /* justify-content:space-between; */
+    width:100%;
+    margin:5px;
+    font-size:15px;
+    color:#111;
+    font-weight:550;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+.checkmark
+{
+    height:15px;
+    min-width:15px;
+    border:1px solid #17252A;
+    margin-top:2px;
+    margin-right: 8px;
+}
+.checkmark::after
+{
+    display:none;
+    content:'';
+    position:absolute;
+    margin-left:3px;
+    width: 7px;
+    height: 11px;
+    border: solid #db2405;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.submit-details label input:checked ~ .cb > .checkmark::after
+{
+    display:block;
+}
+.submit-details label input:checked ~ .cb > .checkmark
+{
+    border-color:#002162;
+}
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button
+{
+    -webkit-appearance:none;
+}
+select
+{
+    background-color:#fff;
+}
+.youpay
+{
+    display:none;
+    color:white;
+    font-size:17px;
+    font-weight:600;
+    font-family:'raleway';
+    position:fixed;
+    bottom:0;
+    z-index:1;
+    padding:0;
+    width:100%;
+}
+.ypr
+{
+    background:#063d99;
+    display:flex;
+    justify-content:space-between;
+    padding:5px 3px;
+}
+.ypr a
+{
+    color:#db2405;
+    font-size:14px;
+}
+.ypr a:hover
+{
+    text-decoration:none;
+}
+@media screen and (max-width:992px)
+{
+    .ftpdetails{flex-direction:column;}
+    .ft-block{width:100%;}
+    .price-block{width:100%;}
+    .price-details{width:98%;margin:0 1%;}
+    .pbdetails{width:100%;}
+    .para{width:100%;}
+    .submit-details{width:100%;}
+    .pdhead{padding:10px 0 0 20px;}
+    .ad-block{display:none;}
+}
+@media screen and (max-width:768px)
+{
+    .cccdform input{width:100%;}
+    .bdform input,.bdform select{width:100%;}
+    .tname{flex-direction:column;}
+    .tname input { width:100%; margin-bottom:15px; }
+    .tgdob{flex-direction:column;}
+    .gender { width:100%; margin:5px 0 15px; }
+    .dobform{width:100%; margin-top:0; margin-left:0; }
+    .fdetails1{display:none;}
+    .fdetails2{display:flex;margin:0 2% 15px 2%;width:96%}
+    .fdetails2 img{width:36px;height:36px;}
+    .fdetails2 div{display:flex;align-items:center;justify-content:space-between;width:90%;}
+    .deprow,.retrow{display:none;}
+    .a1d,.a2d{display:flex;flex-direction:column-reverse;width:40%;}
+    .a1d div:nth-child(1),.a2d div:nth-child(1){display:flex;flex-direction:column;}
+    .tadetails{width:100%;}
+    .flirow{flex-direction:column-reverse;margin:5px;}
+    .cwdetails{flex-direction:row;width:100%;margin:-8px 0;justify-content:center;}
+    .wayd{display:none;}
+    .durarow span:nth-child(2){display:none;}
+    .durarow{background-color:#fff;border-bottom:1px solid #aaa;justify-content:center;margin-top:-5px;}
+    .header{position:static;}
+    .youpay{display:block;}
+    #call1{display:none;}
+    #call2{display:block;}
+    .submit-details button{width:50%;margin:5px 25%;}
+    .headsubinfo{font-size:10px;}
+    .secure-ssl{display:none;}
+    .paydform input{width:100%;}
+    .bdform div{ /*width:100%*/ }
+    .card-images{/*display:none;*/}
+    .backbtnrow{margin-top:10px;}
+    .paydform .expirydate { flex-wrap:wrap; margin-bottom:0 }
+    .paydform .expirydate > div { width:100%; bottom:0 !important; }
+    .paydform .expirydate > select { width:48%!important }
+    #paymentDetails_CvvNo { margin-top:0 }
+    #paymentDetails_MaskCardNumber, #paymentDetails_cardHolderName { width:100%!important; }
+    #paymentDetails_CvvNo { width:100%!important }
+    .billing-details .bdform input, .billing-details .bdform select { width:calc(49% - 6px); width:100%; margin-bottom:0; }
+    #stateSel { width:48%; }
+}
+@media screen and (max-width:480px)
+{
+    .paydform .expirydate > select { width:47% !important; }
+    #paymentDetails_MaskCardNumber, #paymentDetails_cardHolderName { width:100%!important; }
+    .flirow{flex-direction:column-reverse;margin:5px;font-size:11px;}
+    .fliname{font-size:13px;}
+    .stop-divider{font-size:11px;}
+
+    .submit-details button{width: 58%;}
+}
+@media screen and (max-width:400px){
+    #paymentDetails_MaskCardNumber, #paymentDetails_cardHolderName { width:100% !important; margin-left:0; margin-right:0; }
+    .paydform .expirydate { width:100% !important; }
+    #paymentDetails_CvvNo { /*margin-top:10px;*/ width:100% !important; }
+}
+.footer-container
+{
+    background-color:#ffffff;
+}
+.footer2
+{
+    width:96%;
+    margin:auto;
+    max-width:1200px;
+    font-family:-apple-system,BlinkMacSystemFont,Arial,Helvetica Neue,Segoe UI,Roboto,sans-serif;
+    font-size:12.49px;
+    line-height:17px;
+}
+.footer2 p,.footer2 b
+{
+    color:#777;
+}
+.footer-icons
+{
+    width:96%;
+    margin:auto;
+    max-width:1200px;
+    height:100px;
+    background-image:url(../images/footericons.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:85% auto;
+}
+@media only screen and (max-width:1025px)
+{
+    .footer1{display:none;}
+    .footer-icons{display:none;}
+}
+.help-block{display:none !important;}
+.terms-screen-overlay,.policy-screen-overlay
+{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1001;
+    display:none;
+}
+.terms-and-conditions,.privacy-and-policy
+{
+    background-color:#ffffff;
+    border-radius:5px;
+    padding:20px;
+    box-shadow:1px 1px 1px #909090,-1px -1px 1px #909090,1px -1px 1px #909090,-1px 1px 1px #909090;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width:560px;
+    max-width:90vw;
+}
+.terms-and-conditions p,.privacy-and-policy p
+{
+    font-size:15px;
+}
+.t-and-c-of,.p-and-p-of
+{
+    max-height:50vh;
+    overflow:auto;
+}
+.t-and-c-close,.p-and-p-close
+{
+    display:flex;
+    justify-content:space-between;
+}
+.t-and-c-close i,.p-and-p-close i
+{
+    cursor: pointer;
+    color:#707070;
+}
+.tcshow,.ppshow
+{
+    cursor: pointer;
+    color:#063d99 !important;
+    text-decoration:underline !important;
+}
+.PpayInfoForm > div { width:100% !important; /* display:inline-flex; align-items:center;*/ margin-bottom: 5px; }
+.PpayInfoForm > div label { width:auto; font-weight:normal; font-size:12px; letter-spacing:0.5px; margin-bottom:0; padding:0; margin-right:0; font-weight: 600; }
+.PpayInfoForm > div select { width:15% !important; margin-left:0; margin-right:0; }
+.PpayInfoForm > div input { width:20% !important; margin-left:0; margin-right:0; }
+.PpayInfoForm > div select:nth-child(3) { width:calc(15% - 10px)!important; margin-left:5px; margin-right:5px; }
+
+span.required-star {color: #f00;}
+.trustpilot-shortwidget{text-align: center;}
+.trustpilot-shortwidget .trustpilot-logoimg {width: 120px; height: auto;}
+.trustpilot-start img {width: 175px; height: auto;}
+.trustpilot-shortwidget .trustpilot-start {display: block; margin-top: 6px;}
+.trustpilot-shortwidget .total-reviews {font-size: 12px;}
+
+@media screen and (max-width:768px){
+    .PpayInfoForm > div { flex-wrap:wrap; margin-bottom:8px;}
+    .PpayInfoForm > div label { width:100% }
+    .PpayInfoForm > div > label { display:none; }
+    .PpayInfoForm > div.expirydate > label { display:block; }
+    .paydform.PpayInfoForm > div input { width:100% !important; }
+    .paydform.PpayInfoForm .expirydate > select { width:33% !important }
+    #paymentDetails_ExpiryMonth, #paymentDetails_ExpiryYear { width:100% !important; margin-top:0 }
+}
+
+@media screen and (max-width:767px){
+    .cccdform{gap: 2%;}
+}
+
+
+@media screen and (max-width:400px){
+    #paymentDetails_ExpiryMonth, #paymentDetails_ExpiryYear { width:100% !important; }
+}

@@ -1,0 +1,79 @@
+.sheen-animation
+{
+  position: relative;
+  max-width:1366px;
+  margin:auto;
+  display:flex;
+  overflow: hidden;
+}
+.pseudo-filter
+{
+    width:19%;
+    margin:20px 3%;
+    display:flex;
+    flex-direction:column;
+}
+.pseudo-filter-head
+{
+  margin:5px 0;
+  height:30px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.pseudo-filter-content
+{
+  margin:5px 0;
+  height:120px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.pseudo-results
+{
+  width:72%;
+  margin:15px 0;
+  margin-right:3%;
+}
+.pseudo-result-blocks
+{
+  margin:10px 0;
+  height:200px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.animation-move
+{
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+  position: absolute;
+  top:0;
+  left:-10%;
+  width:100px;
+  height:100%;
+  animation:anim 2s infinite;
+  transform:rotate(2deg);
+}
+@keyframes anim 
+{
+  0%{left:-10%;}
+  40%{left:110%;}
+  100%{left:110%}
+}
+@keyframes anim1 
+{
+  0%{left:-10%;}
+  30%{left:110%;}
+  100%{left:110%}
+}
+@media only screen and (max-width:1025px)
+{
+  .pseudo-filter{display:none;}
+  .pseudo-results{width:94%;margin:15px 3%;}
+}
+@media only screen and (max-width:768px)
+{
+  .sheen-animation{padding-top:100px;}
+  .pseudo-result-blocks{height:150px;}
+  .animation-move{animation-name:anim1;}
+}

@@ -1,0 +1,647 @@
+.mycontainer
+{
+    max-width:1366px;
+    margin:auto;
+}
+.header
+{
+    max-width:1366px;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+    height:60px;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+}
+.logo-fh img
+{
+    height:60px;
+}
+.logo-fh
+{
+    margin:auto 3%;
+}
+.navbar-main
+{
+    display:flex;
+    margin:0 3%;
+    height:60px;
+    align-items:center;
+}
+.navbar-main li
+{
+    display:inline;
+}
+.navbar-main li a
+{
+    text-decoration:none;
+    color:#101010;
+    font-family: 'Lato', sans-serif;
+    padding:19px 10px;
+}
+.navbar-main li a:hover
+{
+    color:#ff4500;
+}
+.expert-talk a
+{
+    padding:20px 10px;
+    text-decoration:none;
+    font-family:-apple-system,BlinkMacSystemFont,Arial,Helvetica Neue,Segoe UI,Roboto,sans-serif;
+}
+.expert-talk a span
+{
+    color:#ff4500;
+    font-size:20px;
+    font-weight:bold;
+}
+.expert-talk a span:nth-child(1)
+{
+    font-size:13px;
+    color:#707070;
+    font-weight:normal;
+}
+.side-navbar-button
+{
+    display:none;
+    margin:auto 3%;
+}
+.side-navbar-button button
+{
+    border:0;
+    color:#002142;
+    outline:0;
+    background-color:#ffffff;
+    cursor: pointer;
+    font-size:22px;
+}
+.side-navbar-button button:hover
+{
+    color:#ff4500;
+}
+.side-navbar
+{
+    position:fixed;
+    background-color:#ffffff;
+    display:flex;
+    flex-direction:column;
+    top:0;
+    right:0;
+    z-index:999;
+    height:100%;
+    font-family:-apple-system,BlinkMacSystemFont,Arial,Helvetica Neue,Segoe UI,Roboto,sans-serif;
+    overflow-y:scroll;
+    width:0;
+    transition:width 0.2s;
+}
+.side-navbar::-webkit-scrollbar
+{
+    display:none;
+}
+.side-navbar li
+{
+    display:inline;
+    margin:10px 0;
+}
+.side-navbar li:nth-child(1)
+{
+    background-color:#ffffff;
+    height:25px;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin:0;
+}
+/*
+.side-navbar li:nth-child(2)
+{
+    background-color:#002142;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+}
+.side-navbar li:nth-child(3)
+{
+    background-color:#002142;
+    height:25px;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin:0;
+}
+*/
+.side-navbar li a
+{
+    color:#101010;
+    text-decoration:none;
+    display:flex;
+    padding-left:7%;
+}
+.side-navbar li:nth-child(1) button
+{
+    background-color:#ffffff;
+    border:0;
+    outline:0;
+    color:#101010;
+    margin-right:5px;
+    font-size:20px;
+    cursor: pointer;
+}
+/*
+.side-navbar li:nth-child(2) a
+{
+    padding:10px 40%;
+    color:#ffffff;
+    background-color:#ff4500;
+    text-decoration:none;
+    border-radius:3px;
+}
+.side-navbar li:nth-child(3) a
+{
+    color:#ffffff;
+    margin-right:7%;
+    text-decoration:underline;
+    padding:0;
+}
+*/
+.side-navbar p
+{
+    margin:0 auto;
+    margin-top:20px;
+    font-size:14px;
+    color:#333333;
+}
+.screen-overlay
+{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.8);
+    z-index:998;
+    top:0;
+    display:none;
+}
+#screenoverlay2
+{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.8);
+    z-index:997;
+    top:0;
+    display:none;
+}
+@media only screen and (max-width:1025px)
+{
+    .navbar-main{display:none;}
+    .side-navbar-button{display:block;}
+}
+@media only screen and (min-width:1025px)
+{
+    .side-navbar{visibility:hidden;}
+    .screen-overlay{visibility:hidden;}
+}
+@media only screen and (max-width:768px)
+{
+    .header{position:fixed;width:100%;background-color:#ffffff;}
+}
+.booking-confirm
+{
+    width:76%;
+    margin:10px 12%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+}
+.booking-confirm img
+{
+    width:100px;
+    height:100px;
+    margin:auto;
+}
+.booking-confirm a
+{
+    color:#17252A;
+}
+.booking-confirm a:hover
+{
+    text-decoration:none;
+}
+.booking-confirm div:nth-child(2)
+{
+    font-family:'Raleway';
+    font-size:22px;
+    color:#17252A;
+    font-weight:600;
+}
+.booking-confirm div:nth-child(3)
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color:#666;
+}
+.booking-confirm div:nth-child(4)
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color:#666;
+}
+.booking-confirm div:nth-child(5)
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    color:#17252A;
+    font-weight:600;
+}
+.flight-summary
+{
+    width:76%;
+    margin:10px 12%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border:1px solid #ddd;
+}
+.fshead
+{
+    font-size:18px;
+    font-family:'Raleway';
+    font-weight:600;
+    color:#fff;
+    background-color:#FF4500;
+    padding:5px 15px;
+}
+.drfhead
+{
+    width:98%;
+    margin:5px 1%;
+    font-family:'Raleway';
+    font-weight:600;
+    color:#17252A;
+    font-size:17px;
+}
+.drfhead span
+{
+    color:#666;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:400;
+}
+.fdetails
+{
+    width:98%;
+    margin:10px 1%;
+    display:flex;
+    justify-content:space-between;
+}
+.fdetails .col1
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    text-align:left;
+}
+.fdetails .col1 div:nth-child(1) img
+{
+    width:36px;
+    height:36px;
+}
+.fdetails .col1 div:nth-child(1)
+{
+    color:#17252A;
+    font-weight:600;
+    font-family:'Raleway';
+}
+.fdetails .col2
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+}
+.fdetails .col2 div:nth-child(1)
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#17252A;
+    font-size:15px;
+    font-weight:500;
+    height:30px;
+}
+.fdetails .col2 div:nth-child(1) span
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#666;
+    font-size:14px;
+    font-weight:400;
+}
+.fdetails .col3
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:right;
+    text-align:right;
+}
+.fdetails .col3 div:nth-child(1)
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#17252A;
+    font-size:15px;
+    font-weight:500;
+    height:30px;
+}
+.fdetails .col3 div:nth-child(1) span
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#666;
+    font-size:14px;
+    font-weight:400;
+}
+.fdetails .col1 div:nth-child(2),.fdetails .col2 div:nth-child(2),.fdetails .col3 div:nth-child(2)
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#17252A;
+    font-size:15px;
+    margin:5px 0;
+}
+.fdetails .col2 div:nth-child(2)
+{
+    margin:5 0 0 0;
+}
+.fdetails .col1 div:nth-child(4),.fdetails .col2 div:nth-child(4),.fdetails .col3 div:nth-child(4)
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#17252A;
+    font-size:15px;
+}
+.fdetails .col1 div:nth-child(3),.fdetails .col3 div:nth-child(3)
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#17252A;
+    font-weight:700;
+}
+.fdetails .col1 div:nth-child(3) span,.fdetails .col3 div:nth-child(3) span
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#666;
+    font-size:16px;
+    font-weight:400;
+}
+.fdetails .col2 div:nth-child(3)
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#17252A;
+    font-size:22px;
+    font-weight:700;
+    margin:-5px 0;
+}
+.stop-divider
+{
+    width:100%;
+    text-align:center;
+    font-size:13px;
+    color:#777;
+    border-bottom:1px dashed #777;
+    margin:0;
+}
+.stop-divider span
+{
+    background:#fff;
+    padding:0 10px;
+    position:relative;
+    top:7px;
+}
+hr
+{
+    border:1px solid #ccc;
+    width:100%;
+}
+.traveler-details
+{
+    width:76%;
+    margin:10px 12%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border:1px solid #ddd;
+}
+.tdhead
+{
+    font-size:18px;
+    font-family:'Raleway';
+    font-weight:600;
+    color:#fff;
+    background-color:#FF4500;
+    padding:5px 15px;
+}
+.tdtable
+{
+    width:98%;
+    margin:5px 1%;
+    text-align:center;
+}
+.tdtable tr:nth-child(odd)
+{
+    background-color:#eee;
+}
+.tdtable tr:nth-child(1)
+{
+    background-color:#ddd;
+    color:#17252A;
+    font-family:'Raleway';
+}
+.tdtable td,.tdtable th
+{
+    padding:5px;
+}
+.contact-details
+{
+    width:76%;
+    margin:10px 12%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border:1px solid #ddd;
+}
+.cdhead
+{
+    font-size:18px;
+    font-family:'Raleway';
+    font-weight:600;
+    color:#fff;
+    background-color:#FF4500;
+    padding:5px 15px;
+}
+.cdtable
+{
+    width:98%;
+    margin:5px 1%;
+    text-align:center;
+    display:flex;
+}
+.cdtable div
+{
+    width:30%;
+}
+.cdtable div:nth-child(3)
+{
+    width:40%;
+}
+.cdtable div span:nth-child(1)
+{
+    display:flex;
+    background-color:#ddd;
+    width:100%;
+    padding:5px 0;
+    justify-content:center;
+    font-family:'Raleway';
+    font-weight:600;
+    color:#17252A;
+}
+.cdtable div span:nth-child(2)
+{
+    display:flex;
+    width:100%;
+    padding:5px 0;
+    justify-content:center;
+    color:#17252A;
+}
+.price-details
+{
+    width:76%;
+    margin:10px 12%;
+    border:1px solid #ddd;
+}
+.pdhead
+{
+    font-size:18px;
+    font-family:'Raleway';
+    font-weight:600;
+    color:#fff;
+    background-color:#FF4500;
+    padding:5px 15px;
+}
+.person-price
+{
+    width:100%;   
+}
+.tpp
+{
+    width:96%;
+    margin:5px 2%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:550;
+    display:flex;
+    justify-content:space-between;
+    font-size:15px;
+}
+.fcp,.tfp
+{
+    width:96%;
+    margin:5px 2%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    display:flex;
+    justify-content:space-between;
+}
+.total-price
+{
+    width:100%;
+    padding:5px 2%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display:flex;
+    justify-content:space-between;
+    background-color:#002142;
+    color:#ffffff;
+    font-size:19px;
+    font-weight:520;
+}
+.price-details p
+{
+    width:100%;
+    padding:5px 2%;
+    margin:0;
+    font-size:11px;
+    color:#333;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    background-color:#fff;
+}
+.tcs
+{
+    width:76%;
+    margin:10px 12%;
+    padding:10px;
+    color:#333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tcs p
+{
+    font-size:14px;
+}
+.tcs p span
+{
+    font-weight:550;
+    color:222;
+}
+
+@media screen and (max-width:992px)
+{
+    .header{position:static;}
+    #call1{display:none;}
+    #call2{display:block;}
+    .booking-confirm,.flight-summary,.traveler-details,
+    .contact-details,.tcs,.price-details{width:96%;margin:10px 2%;}
+}
+@media screen and (max-width:768px)
+{
+.cdtable,.tdtable{font-size:15px;}
+.cdtable{flex-direction:column;}
+.cdtable div{width:100%;}
+.cdtable div:nth-child(3){width:100%;}
+.drfhead{font-size:15px;}
+.drfhead span{font-size:14px;}
+.fdetails{font-size:13px;}
+.fdetails .col2 div:nth-child(1),.fdetails .col3 div:nth-child(1){font-size:13px;}
+.fdetails .col2 div:nth-child(1) span,.fdetails .col3 div:nth-child(1) span{font-size:12px;}
+.fdetails .col1 div:nth-child(2),.fdetails .col2 div:nth-child(2),
+.fdetails .col3 div:nth-child(2),.fdetails .col1 div:nth-child(4),
+.fdetails .col2 div:nth-child(4),.fdetails .col3 div:nth-child(4){font-size:13px;}
+.fdetails .col1 div:nth-child(3) span,.fdetails .col3 div:nth-child(3) span{font-size:14px;} 
+.stop-divider{font-size:11px;}
+}
+@media screen and (max-width:480px)
+{
+    .drfhead{font-size:14px;}
+    .drfhead span{font-size:13px;}
+    .fdetails{font-size:12px;}
+    .fdetails .col2 div:nth-child(1),.fdetails .col3 div:nth-child(1){font-size:12px;}
+    .fdetails .col2 div:nth-child(1) span,.fdetails .col3 div:nth-child(1) span{font-size:11px;}
+    .fdetails .col1 div:nth-child(2),.fdetails .col2 div:nth-child(2),
+    .fdetails .col3 div:nth-child(2),.fdetails .col1 div:nth-child(4),
+    .fdetails .col2 div:nth-child(4),.fdetails .col3 div:nth-child(4){font-size:12px;}
+    .fdetails .col1 div:nth-child(3) span,.fdetails .col3 div:nth-child(3) span{font-size:13px;} 
+    .stop-divider{font-size:11px;}
+}
+.footer2 p,.footer2 b
+{
+    color:#777;
+}
+.footer-icons
+{
+    width:96%;
+    margin:auto;
+    max-width:1200px;
+    height:100px;
+    background-image:url(../images/footericons.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:85% auto;
+}
+@media only screen and (max-width:1025px)
+{
+    .footer1{display:none;}
+    .footer-icons{display:none;}
+}
