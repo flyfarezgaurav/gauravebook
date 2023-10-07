@@ -253,9 +253,13 @@ body,html
 }
 @media only screen and (max-width:1025px)
 {
-    .navbar-main{display:none;}
+    .navbar-main { /*display:none;*/ position:absolute; top:0; right:60px; }
     .side-navbar-button{display:block;}
     .logo-fh img{top:0;}
+    .expert-talk span.topcall-text-sec { display:none; }
+    .expert-talk a span:nth-child(1) { margin:0; }
+    .expert-talk img { width:30px }
+    .header { z-index:10 !important; }
 }
 @media only screen and (min-width:1025px)
 {

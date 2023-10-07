@@ -69,11 +69,7 @@ $(document).ready(function(){
             <div class="navbar-main">
                <!--  <li><a href="#"><i class="fa fa-user-circle"></i> &nbsp;Sign In&nbsp;<i class="fa fa-angle-down"></i></a></li> -->
          	    <div class="expert-talk">
-                    <!-- <a href="tel:+1(800)404-0025"><span>Get Customer Support: </span><span> 1-800-404-0025</span></a> -->
-                    <a href="tel:+1-800-404-0025"><span class="call-icon"><img src="/resources/images/customer-care-img.png" alt="phonek" width="5" height="5" loading="lazy" decoding="async"> </span><span class="topcall-text-sec"> 
-                        <span class="topcall-text">Get Customer Support:</span>
-                        +1-800-404-0025</span>
-                    </a>
+                <a href="tel:+1(800)404-0025"><span>Get Customer Support: </span><span> 1-800-404-0025</span></a>
                 </div>
             </div>
             <div class="side-navbar-button">
@@ -82,17 +78,16 @@ $(document).ready(function(){
         </div>
     </div>
     <div class="side-navbar" id="sidenavbar">
-        <li><span>MENU</span><button type="button" onclick="hidesidenav()"><i class="fa fa-close"></i></button></li>
+        <li><button type="button" onclick="hidesidenav()"><i class="fa fa-close"></i></button></li>
        <!-- <li><a href="#">Sign In</a></li>
         <li><a href="#">Register</a></li>
         <li><a href="#">My Bookings</a></li>
         <li><a href="#">Customer Support</a></li>
         <li><a href="#">Track Credit/Refund</a></li> -->
-        <li><a href="/">Home</a></li>
-        <li><a href="/flights">Flights</a></li>
         <li><a href="/contactus">Contact Us</a></li>
         <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
         <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <p>Copyright &copy;  2021 - 2022, Ebooktrip. All rights reserved</p>
     </div>
     <div class="screen-overlay" id="screenoverlay" onclick="hidesidenav();"></div>
     <div id="screenoverlay2" onclick="enginehide();"></div>
@@ -564,7 +559,7 @@ $(document).ready(function(){
                 
                 <div ng-if="flightsResponse.flightResult.length > 0">
                 	<c:if test="${IsSoldOut=='true'}">
-                		<p style="color:blue;text-align:center;font-size:15px;font-weight: 500;"> We're sorry. The fare for the flights you selected just sold out. Please select anotherï¿½itinerary.</p><br/>
+                		<p style="color:blue;text-align:center;font-size:15px;font-weight: 500;"> We're sorry. The fare for the flights you selected just sold out. Please select another itinerary.</p><br/>
                 	</c:if>
                 </div>
 				        
@@ -613,16 +608,15 @@ $(document).ready(function(){
 				<input type="hidden" value="" id="minFarePrice" />
 <style type="text/css">
 @media(max-width: 768px){
-    .horizon-filter {display:flex; }
-    .horizon-filter-item {display: inline-flex; flex: auto;}
+    .horizon-filter { display:flex; }
+    .horizon-filter-item {  display: inline-flex; flex: auto; }
 }
 @media(max-width:500px){
-    .horizon-filter-item { flex:unset; width: 33.33%; display: block; text-align: center; }
-    .horizon-filter-price{font-size: 12px;}
-    .horizon-filter-by {font-size: 12px;}
+    .horizon-filter-item {  display: inline-flex; flex: auto; }
 }
 @media(max-width:400px){
-    .horizon-filter {flex-wrap:wrap;}
+    .horizon-filter { flex-wrap:wrap; }
+    .horizon-filter-item { flex:unset; width:50%; }
 }
 </style>
 				<div class="horizon-filter" ng-if="flightsResponse.flightResult.length > 0">
@@ -653,14 +647,6 @@ $(document).ready(function(){
                     </label>
                     
                 </div>
-
-
-                <div class="ebook-planttree-sec">
-                    <picture>
-                        <source media="(max-width:767px)" srcset="/resources/images/plant-tree-banner-result-mobile.webp">
-                        <img src="/resources/images/plant-tree-banner.webp" alt="plant-tree-banner" width="10" height="5" loading="lazy" decoding="async">
-                    </picture>
-               </div>
              
 		<div infinite-scroll="LoadMore()">
 			<div class="result-container" ng-repeat="flight in filteredFlights = (flightsResponse.flightResult |filter:priceRange |filter:dptTimeRange |filter:retTimeRange |filter:stopsFilter |filter:airlinesFilter |filter:departAirportFilter |filter:returnAirportFilter |filter:depLayFilter|filter:retLayFilter|filter:matrixFilter|orderBy:sortKey:reverse) | limitTo:numberOfResult">
@@ -937,13 +923,6 @@ $(document).ready(function(){
                     <span><b><i class="fa fa-tag fa-lg"></i> &nbsp;Save Instantly on your trip!</b> <span>Get up to $20 OFF our fees.</span></span>
                     <button type="button">Get Promo Code</button>
 					</div> -->
-
-                    <div class="ebook-planttree-sec" ng-if="!(($index + 1) % 5)">
-                        <picture>
-                            <source media="(max-width:767px)" srcset="/resources/images/plant-tree-banner-result-mobile.webp">
-                            <img src="/resources/images/plant-tree-banner.webp" alt="plant-tree-banner" width="10" height="5" loading="lazy" decoding="async">
-                        </picture>
-                   </div>
 				
                 </div>
 				</div>
@@ -1131,7 +1110,7 @@ $(document).ready(function(){
                 </div>
             </div>
             <div class="R_fullSave">
-                <p><strong>100% Safe. No purchase required.</strong> <span>I agree to provide my phone number and to be contacted by clicking Get a Free Quote. Your privacy is respected.</span></p>
+                <p><strong>100% Safe. No purchase required.</strong> <span>I agree to provide my phone number and to be contacted by clicking ”Get a Free Quote”. Your privacy is respected.</span></p>
             </div>
         </div>
     </div>
@@ -1196,8 +1175,8 @@ $(document).ready(function(){
         </div>
     </div> -->
 </body>
-<script src="/resources/scripts/script.js?1-AUG-2023"></script>
-<script src="/resources/scripts/flight-result.js?20-May_2023"></script>	
+<script src="/resources/scripts/script.js?31_AUG_2023"></script>
+<script src="/resources/scripts/flight-result.js?24-sep-2023"></script>	
 
 
 <script type="text/javascript">
@@ -1275,7 +1254,7 @@ function phoneValidate(phones) {//alert(phone.value)
        success: function(result) { 
        if(result === "success") {  
        $("#newPopup").removeClass("active");  
-        $("#popupSuccess").addClass("active");
+        $("#popupSuccess").addClass("active"); 
         console.log('yessssss 1') 
         setTimeout(function(){
             $("#popupSuccess").removeClass( "active" );

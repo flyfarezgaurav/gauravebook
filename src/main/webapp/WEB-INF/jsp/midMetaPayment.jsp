@@ -10,11 +10,11 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-	    <link rel="icon" href="/resources/images/favicon.png">
+	<link rel="icon" href="/resources/images/favicon.png">
 		<link rel="stylesheet" href="/resources/css/loader.css?124" type="text/css">
 		<script src="/resources/scripts/jquery-1.11.1.min.js"></script>
 		<script>
-function randomString(length) {
+		function randomString(length) {
     var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz'.split('');
 
     if (! length) {

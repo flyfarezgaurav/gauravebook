@@ -143,7 +143,7 @@ function goBack() {
     $(location).attr("href", encodedUrl);
 }
 </script>
-<link rel="stylesheet" href="/resources/css/payment.css?Oct2-2023" type="text/css">
+<link rel="stylesheet" href="/resources/css/payment.css?2052023" type="text/css">
     <jsp:include page="../../tag-manager-head.jsp" />
 
 <script>
@@ -190,8 +190,6 @@ gtag('event', view_item, {
         <div class="backbtnrow mycontainer">
             <button type="button" onclick="goBack();" style="border-radius:3px"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp; Go Back</button>
         </div>
-		<input type="hidden" value="${currencySymbol}" id="currencySymbol" />
-		<input type="hidden" value="${currencyValue}" id="currencyValue" />
 		<fmt:setLocale value="en_US" scope="session"/>
 		
 		<form:form method="POST" action="/payment/billing/${bookingRequest.searchID}/${bookingRequest.flightResult.resultID}" id="bookingRequest" modelAttribute="bookingWrapper" novalidate="novalidate">

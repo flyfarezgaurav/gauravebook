@@ -31,33 +31,7 @@
 .detailCntnt_popup:after { border-bottom:11px solid #fff; z-index:1; }
 .detailCntnt_popup > img { position:absolute; top:5px; right:5px; height:12px; opacity:0.4; cursor:pointer; z-index:1; transition:all 0.5s; -webkit-transition:all 0.5s; }
 .detailCntnt_popup > img:hover { opacity:1; transition:all 0.5s; -webkit-transition:all 0.5s; }
-.travel-assist-tnc {color: #000; border-radius: 3px; font-size: 13px; text-decoration: underline;} */
-
-
-.refundable-booking-price ul.checkMark.checkMark_ {width: 75%; padding-bottom: 12px;}
-.refundable-booking-price .checkMark.checkMark_ li {width: 50%; font-size: 13px;}
-.refundable-booking-price .pricedropP .web-checking-details {display: flex; justify-content: space-between; padding-right: 30px; align-items: center; margin: 12px 0;}
-.refundable-booking-price .pricedropP .protection-price-display span.price-display-text {font-weight: bold; font-size: 18px; color: #063d99;}
-.price-display-text span {display: block; font-size: 12px; color: #383737; font-weight: normal;}
-.protection-price-display .proAddProd {padding-right: 0;}
-.refundable-booking-price .protection-price-display {text-align: right;}
-.addRemButSec button#addwebcheck{color: #fff; background: #db2405;border: 1px solid #db2405; padding: 8px 15px 8px;}
-.addRemButSec button#removewebcheck{color: #fff; background: #db2405;border: 1px solid #db2405; padding: 8px 15px 8px;}
-.addRemButSec button#removewebcheck i {margin-right: 5px;}
-
-.proaddnonte {padding: 0 20px; font-size: 13px; color: #5b5b5b;}
-.proaddnonte p {border: 1px solid #b1c8ef; padding: 6px 8px; border-radius: 5px;}
-.proaddnonte p span {font-weight: 500; color: #1f5bc1;}
-.proaddnonte p a {color: #005dba !important;} 
-
- @media(max-width:767px){
-  .refundable-booking-price .pricedropP .web-checking-details{display: block; margin-bottom: 5px;}
-  .refundable-booking-price ul.checkMark.checkMark_{width:100%; padding-bottom: 7px;}
-  .refundable-booking-price .protection-price-display {text-align: left; margin-top: 10px; padding-left: 20px; display: flex; justify-content: space-between;}
-  .refundable-booking-price .checkMark.checkMark_ li {width: 100%; font-size: 13px;}
-  .protection-price-display .proAddProd {padding-right: 0; width: auto;  padding-top: 0;}
-} 
-
+.travel-assist-tnc {color: #000; border-radius: 3px; font-size: 13px; text-decoration: underline;}
 @media(max-width:600px){
     .mobTermsDiv { display:block; }
     .ftpdetails > .ft-block > .billing-details:nth-child(2) .trvlInsuranceSecn.cccdhead p { width:100%; }
@@ -67,22 +41,7 @@
     .trvlInsuranceSecn.trvlProt .cccdhead div { font-size:16px; padding:15px }
 }
 </style>
-<c:set var = "wCondition" scope = "session" value = "0"/>
- <c:forEach items="${bookingRequest.ancillaryServices}" var="anclleries" varStatus="indexed">
-   <c:choose >
-          <c:when test="${bookingWrapper.paymentDetails.state==',WA' || bookingWrapper.paymentDetails.state==',HI' || bookingWrapper.paymentDetails.state==',NY'}">
-          <c:set var = "wCondition" scope = "session" value = "1"/>
-          </c:when>
-    </c:choose>
- </c:forEach>
- 
- <c:if test = "${wCondition==1}">
-         <!-- HIDE THE BANNER -->
-    </c:if>
-	
-    
-    <c:forEach items="${bookingRequest.ancillaryServices}" var="anclleries" varStatus="indexed">
-  <c:if test = "${wCondition==0}">
+<c:forEach items="${bookingRequest.ancillaryServices}" var="anclleries" varStatus="indexed">
     <c:if test="${anclleries.supplierCode=='TAG'}">
     <div class="billing-details" style="display:none;">
         <div>
@@ -112,7 +71,7 @@
             <div>
                 <!-- <label><strong>Yes, I want to insure my trip </strong></label> -->
                 <label><strong>Yes, include travel insurance for </strong>
-                    <span>${currencySymbol}</span><fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${bookingRequest.travelGuardCost*currencyValue}" /> <span class="smalTxt">(Available only to residents of U.S. states and the District of Columbia.)</span>
+                    <span>$</span>${bookingRequest.travelGuardCost} <span class="smalTxt">(Available only to residents of U.S. states and the District of Columbia.)</span>
                 </label>
                 <p>I acknowledge that I have read and understand the <a href="https://webservices.travelguard.com/Product/FileRetrieval.aspx?CountryCode=US&StateCode=AL&ProductCode=939502&PlanCode=NW&FileType=PROD_PLAN_GM" target="_blank"><strong>Policy of Insurance</strong></a> and <a href="https://www.travelguard.com/legal/disclaimer" target="_blank"><strong>Important Disclosures</strong></a>, and agree to the terms and conditions of the insurance coverage provided.</p>
                 <!-- <p><span>$</span>${bookingRequest.travelGuardCost} / person</p> -->
@@ -138,7 +97,6 @@
 </div>
     </div> 
     </c:if>
-    </c:if>
            
     <c:if test="${anclleries.supplierCode=='PDP'}">
 <div class="billing-details">
@@ -156,27 +114,14 @@
                                 <li>${services.name}</li>
                             </c:forEach>
                         </ul>
-                        <div class="protection-price-display">
-                            <span>${currencySymbol}<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="14.99" />
-                            
-                              <span class="per-person-text">per person</span>
-                            </span>
+                        <div>
+                            <span>$<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="14.99" />/ person</span>
                             <%-- <input type="hidden" id="priceDropAmount" value="${anclleries.owServiceText[0].price}" /> --%>
-
-                            <span class="addRemButSec">
-                              <button type="button" id="addPdp" onClick="flightProduct('Add', '14.99');">
-                                <i class="fa fa-check" aria-hidden="true"></i> <span>Add Product</span>
-                              </button>
-                              <button type="button" id="removePdp" onClick="flightProduct('Remove','0.00');" style="display:none;">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i><span>Remove Product</span>
-                              </button>
-                           </span>
-
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="proAddProd">
+            <div class="proAddProd">
                 <a class="proAddProd-learnmorebtn" href="javascript:;" data-toggle="modal" data-target="#priceDropProtectionPopup">Learn More</a>
                 <span class="addRemButSec">
                     <button type="button" id="addPdp" onClick="flightProduct('Add', '14.99');">
@@ -186,78 +131,9 @@
                       <i class="fa fa-trash-o" aria-hidden="true"></i><span>Remove Product</span>
                     </button>
                 </span>
-            </div> -->
-
-            <div class="proaddnonte">
-              <p><span><i class="fa fa-info-circle" aria-hidden="true"></i> Note : </span> You never know when the airline will make a promotion announcement and provide a better deal on your
-                flight. Get the opportunity for money back with our Price Drop Protection. <a href="javascript:;" data-toggle="modal" data-target="#priceDropProtectionPopup">Learn More</a></p>
             </div>
-        </div>
-  </div>
-
-<form:hidden path="webcheckincost"  value="0.00" />
-<form:hidden path="webcheckin"  value="No"/>
-  <div class="billing-details">
-    <div>
-        <div class="trvlProt refundable-booking-price bgblue">
-            <div>
-              <div class="cccdhead"> <img src="/resources/images/icons/web-checking-white.png" alt="Protection"> Web Check-in
-              </div>
-
-                <div class="pricedropP">
-                  <p>Reasons you might need web check-in</p>
-                    <div class="web-checking-details">                    
-                      <ul class="checkMark checkMark_">
-                        <li>We'll complete the process of flight check-in on time.</li>
-                        <li>Prior to reaching the airport, you will obtain an assigned seat.</li>
-                        <li>Enter directly without visiting the kiosk/check-in counter</li>
-                        <li>Do not need to pay a fee for printing the boarding pass.</li>
-                    </ul>
-                    <div class="protection-price-display">
-                        <span class="price-display-text">${currencySymbol}<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${9.99}" />
-                          <span>per person/each way</span>
-                        </span>
-                       
-
-                        <div class="proAddProd">
-                            <span class="addRemButSec">
-                              <button type="button" onclick="setWebcheck('Add','9.99')"  id="addwebcheck">
-							    <i class="fa fa-check" aria-hidden="true"></i> <span>Add Product</span>
-                              </button>
-                              <button type="button" onclick="setWebcheck('Remove',0.0)" id="removewebcheck" style="display:none;">
-							    <i class="fa fa-trash-o" aria-hidden="true"></i><span>Remove Product</span>
-                              </button>
-                          </span>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="proaddnonte">
-                  <p><span><i class="fa fa-info-circle" aria-hidden="true"></i> Note : </span> Enjoy the trip. Make unforgettable memories. On the registered email, you will get your boarding pass. Bring a printout of the boarding pass at the airport. For any further queries related to seat and baggage, Contact us at <a href="tel:+1-800-404-0025">+1-800-404-0025</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="proAddProd">
-            <a class="proAddProd-learnmorebtn" href="javascript:;" data-toggle="modal" data-target="#priceDropProtectionPopup">Learn More</a>
-            <span class="addRemButSec">
-                <button type="button" id="addPdp" onClick="flightProduct('Add', '14.99');">
-                  <i class="fa fa-check" aria-hidden="true"></i> <span>Add Product</span>
-                </button>
-                <button type="button" id="removePdp" onClick="flightProduct('Remove','0.00');" style="display:none;">
-                  <i class="fa fa-trash-o" aria-hidden="true"></i><span>Remove Product</span>
-                </button>
-            </span>
-        </div> -->
-    </div>
-</div>
-  
+</div></div>
         </c:if>
-
-
-       
-      
-       
-
         
         <c:if test="${anclleries.supplierCode=='TAS'}">
 <div class="billing-details">
@@ -337,7 +213,7 @@
                                 </ul>
                                 <div>
                                     <a onclick="javascript:addTravelAssist('${serviceText.name}', ${serviceText.price});" style="cursor:pointer;">
-                                    ${currencySymbol}<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${serviceText.price}" /></a>
+                                    $<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${serviceText.price}" /></a>
                                 </div>
                             </div>
                         </div>
@@ -380,11 +256,6 @@
                         </c:forEach>
                         <div class="col-12 mobTermsDiv"><a href="javascript:;" data-toggle="modal" data-target="#travelAssistPopup">*terms and conditions</a></div>
                     </div>
-                    
-                    <div class="proaddnonte">
-                      <p><span><i class="fa fa-info-circle" aria-hidden="true"></i> Note : </span> All Fares displayed are quoted in ${currencySymbol} and inclusive of base fare, taxes and other services.</p>
-                    </div>
-
                     </div>
                 </div>
 </div>        
@@ -393,7 +264,6 @@
                 
     
 </c:forEach>
-
 <style type="text/css">
 .logoColor { color:white; letter-spacing:2px; font-weight:bold; font-size:24px; height:auto; padding-top:0; padding-bottom:0; }
 .p-tb-5 { padding:5px 0 }
@@ -407,7 +277,7 @@
 .aigLogo { height:35px }
 .twoLogo { display:flex; justify-content:flex-end; align-items:center; }
 .img-responsive { max-width:100% }
-#travelInsurancePopup button.close, #travelAssistPopup button.close, #priceDropProtectionPopup button.close { position:absolute; right:6px; top:4px; z-index: 9; width:30px; height:30px; background:white; opacity:1; display:flex; align-items:center; justify-content:center; border-radius:0 6px 6px 0; }
+#travelInsurancePopup button.close, #travelAssistPopup button.close, #priceDropProtectionPopup button.close { position:absolute; right:-30px; top:15px; width:30px; height:30px; background:white; opacity:1; display:flex; align-items:center; justify-content:center; border-radius:0 6px 6px 0; }
 #travelInsurancePopup button.close span, #travelAssistPopup button.close span, #priceDropProtectionPopup button.close span { position:relative; top:-2px }
 @media(max-width:991px){
     .modal-dialog { max-width:90%; margin-right:0; margin-left:5% }

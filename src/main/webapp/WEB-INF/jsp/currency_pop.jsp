@@ -24,6 +24,9 @@
 #RVM_currencycountry_popup .RVM_curcoun_body .RVM_region_saveornot .RVM_siteBTN.RVM_siteBTN_G { background:gainsboro; color:black; margin-left:5px }
 .RVM_curncy_drp_li a:hover span, .RVM_curncy_drp_li a:focus span { transform:translateY(-0%) !important; }
 .RVM_curncy_drp_li .RVM_currencycountry_pack label {font-size: 14px; position: relative; top: 2px;}
+@media only screen and (max-width:1025px){
+  .upper-menu > ul.up-nav_group > li.currencyLI { display:block; }
+}
 @media only screen and (max-width:600px){
     #RVM_currencycountry_popup {/*width:250px;*/}
     #RVM_currencycountry_popup.d-flex > div { width:80%; }
@@ -48,7 +51,7 @@
         <div class="col-xs-12" style="padding:0;">
           <select class="form-control countryselect" id="_countryselect" onchange="countryvaluchng();">
             <option selected="selected" value="USA">United States</option>
-            <option value="gb">Greate Britain</option>
+            <option value="gb">United Kingdom</option>
             <option value="ca">Canada</option>
             <option value="mx">Mexico</option>
           </select>
@@ -58,11 +61,11 @@
       <div class="col-xs-12 region_country">
         <label><!-- <i class="fa fa-language" style="font-size:24px" aria-hidden="true"></i>&nbsp;&nbsp; --><span class="languageEnglish">Language</span></label>
         <div class="col-xs-12" style="padding:0;">
-          <select class="form-control countryselect" disabled id="_languageselect">
-              <option value="EN" id="eng" selected="">English</option>
-              <option value="GB" id="gbp">Greate Britain</option>
-              <option value="CA" id="cana">Canadian</option>
-              <option value="MX" id="cana">Mexican</option>
+          <select class="form-control countryselect" disabled id="_languageselect" onchange="currencyvaluchng();">
+              <option value="EN" id="eng" selected="">English-US</option>
+              <option value="GB" id="gbp">English-UK</option>
+              <option value="CA" id="cana">English-CA</option>
+              <option value="MX" id="cana">Spanish</option>
           </select>
           <i class="fa fa-angle-down"></i>
         </div>
@@ -74,7 +77,7 @@
               <option value="USD" selected="">$ - USD</option>
               <option value="GBP">&#163; - GBP</option>
                <option value="CAD">$ - CAD</option>
-               <option value="MEX">$ - MEX</option>
+               <option value="MXN">$ - MXN</option>
           </select>
           <i class="fa fa-angle-down"></i>
         </div>
@@ -87,9 +90,9 @@
     </div>
   </div>
 </div>
-<li class="">
+<li class="currencyLI">
                                   <a href="javascript:;" onclick="openCurrencyPopup('open')"> 
-                                    <i class="fa fa-globe"></i>&nbsp;&nbsp;<span data-hover="English">English</span> </a> </li> 
+                                    <i class="fa fa-globe"></i>&nbsp;&nbsp;<span data-hover="US">US</span> </a> </li> 
 
 
 <script>

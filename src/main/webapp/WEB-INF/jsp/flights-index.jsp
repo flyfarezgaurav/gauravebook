@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Find Flighst Tickets, Discounted Flight Deals | Ebooktrip</title>
+    <title>Find Flighst Tickets, Discounted Flight Deals | ebooktrip.com</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="agd-partner-manual-verification" />
@@ -79,7 +79,7 @@
             <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
             <li><a href="/privacy-policy">Privacy Policy</a></li>
          </ul>
-        <p>Copyright &copy;  2021 - 2023, Ebooktrip. All rights reserved.</p>
+        <p>Copyright &copy;  2021 - 2023, ebooktrip.com All rights reserved.</p>
     </div>
     <div class="screen-overlay" id="screenoverlay" onclick="hidesidenav()"></div>
     <!--Header Ends Here-->
@@ -130,8 +130,8 @@
     <div class="aboutus">
         <div class="flightpage-content static-content">
             <h1 class="subheadings">Best Flight Deals from  <span>Top Airlines</span></h1>
-            <p>What more is required when booking a family or business trip at a very low ticket and being able to afford the best airline service? When searching for Top Flights to book a trip, whether it be for business or with family, one can find them all at <strong>Ebooktrip.com</strong>. Here, a person can look for flights that guarantee an enjoyable trip and a better travel experience at a reasonable price. Additionally, using Ebooktrip credit cards to make bookings will earn you points. With these points, you can get a significant discount on any flight, possibly an upgrade to business class, and many other benefits.</p>
-            <p>You can easily get these Top Airlines' discounts here, making it impossible for anyone to misunderstand them. They can do all of their pricing, offer, and discount comparisons in one location. A person can search through thousands of hotels, Cheap Flights, rental vehicles, and other options all in one location. One can therefore be sure to get the greatest and most accurate deals at <strong>Ebooktrip.com</strong>. Just sign in to your Ebooktrip account to get the lowest prices on your preferred Top Airlines and hotels and to enjoy your travels.</p>
+            <p>What more is required when booking a family or business trip at a very low ticket and being able to afford the best airline service? When searching for Top Flights to book a trip, whether it be for business or with family, one can find them all at <strong>ebooktrip.com</strong>. Here, a person can look for flights that guarantee an enjoyable trip and a better travel experience at a reasonable price. Additionally, using ebooktrip.com credit cards to make bookings will earn you points. With these points, you can get a significant discount on any flight, possibly an upgrade to business class, and many other benefits.</p>
+            <p>You can easily get these Top Airlines' discounts here, making it impossible for anyone to misunderstand them. They can do all of their pricing, offer, and discount comparisons in one location. A person can search through thousands of hotels, Cheap Flights, rental vehicles, and other options all in one location. One can therefore be sure to get the greatest and most accurate deals at <strong>ebooktrip.com</strong>. Just sign in to your ebooktrip.com account to get the lowest prices on your preferred Top Airlines and hotels and to enjoy your travels.</p>
         </div>
         <hr>
     </div>

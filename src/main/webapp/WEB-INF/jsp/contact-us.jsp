@@ -60,7 +60,7 @@
 			
 			<div class="contact-social-icon">
 				<p class="contact-sec-heading">Subscribe Us</p>
-				<p>Customers of cheapinair.com can take advantage of additional services like additional discounts and flight sales in addition to the flight bookings they make. It will be ideal to subscribe to our channels for updates, and the relevant links are provided below:</p>
+				<p>Customers of ebooktrip.com can take advantage of additional services like additional discounts and flight sales in addition to the flight bookings they make. It will be ideal to subscribe to our channels for updates, and the relevant links are provided below:</p>
 				<ul>
 					<li><a href="https://www.facebook.com/EBookTripLLC/" target="_blank" aria-label="facebook"><span class="facebook-icon"><i class="fa fa-facebook" aria-hidden="true"></i></span></a></li>
 					<li><a href="https://twitter.com/EbookTrip" target="_blank" aria-label="twitter"></a><span class="twitter-icon"><i class="fa fa-twitter" aria-hidden="true"></i></span></li>

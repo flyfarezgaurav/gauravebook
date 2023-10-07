@@ -2266,8 +2266,6 @@ body { padding-top:60px; }
 }
 @media only screen and (max-width:585px){
     .expertisetalk { width:auto; padding:0 }
-    .upper-logo { width:auto; }
-    .upper-menu { right:90px }
 }
 @media only screen and (max-width:550px){
     .mymain .mymaininner .mymaininner1 .block1 { width:100% }
@@ -2454,14 +2452,13 @@ span.total-reviews {font-size: 12px; color: #333;}
     .ebook-trustpilot-sec .trustpilot-right ul li:last-child {display:none;}
     .ebook-planttree-sec .center-container {margin-top: -20px;}
 }
-@media only screen and (max-width:500px) {
-    .upper-logo img { width:130px }
-}
+
 @media only screen and (max-width:500px) {
     .ebook-trustpilot-sec .trustpilot-right{display: none;}
     .ebook-trustpilot-sec .trustpilot-left {width: 100%;}
     .ebook-trustpilot-sec .trustpilot-left .trustpilot-logoimg {width: 135px;}
-    .ebook-trustpilot-sec .trustpilot-left .trustpilot-start img {width: 175px;}                            
+    .ebook-trustpilot-sec .trustpilot-left .trustpilot-start img {width: 175px;}
+                           
 }
 
 @media only screen and (max-width:480px) {
@@ -2470,6 +2467,10 @@ span.total-reviews {font-size: 12px; color: #333;}
 
     .ebook-desti-sec .desti-cols-inner-row .desti-cols-inner {width: 100%; margin-bottom: 4px;}
     .ebook-desti-sec .populardestiimg .deal-cityname {font-size: 22px;}
+}
+
+@media only screen and (max-width:414px) {
+    .expertisetalk { right:50px; }  
 }
 
 /**************** Index Page Css End ************************/
@@ -2601,6 +2602,9 @@ span.sticky-close {position: absolute; top: -12px; background: #db2405; font-siz
     .static-content h1{font-size: 24px;}
     .static-content h2{font-size: 20px;}
     .static-content h3{font-size: 18px;}
+}
+@media only screen and (max-width:585px) {
+    .upper-menu { right:90px; }
 }
 
 /********** Contact page Css Start *************/
